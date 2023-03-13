@@ -5,9 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        features = "src/test/resources/features/LoginPage1.feature",
+        features = "src/test/resources/features",
         glue = "com.swacorp.rpa.stepdefinitions",
-        tags = "@Chrome",
+        tags = "@google",
         plugin = {
                 "pretty",
                 "json:target/cucumber-reports/CucumberTestReport.json",

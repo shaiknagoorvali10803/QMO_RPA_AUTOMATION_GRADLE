@@ -52,7 +52,7 @@ def cucumberOptions = ['--plugin', 'pretty',
                        '--plugin',  'com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:Report',
                       '--glue', 'com.swacorp.rpa.stepdefinitions', 'src/test/resources/features',]
 
-def cucumberTagExpression = ['--tags', '@Chrome']
+def cucumberTagExpression = ['--tags', '@google']
 def availableThreadCount = Runtime.runtime.availableProcessors().intdiv(2) ?: 1
 def cucumberThreadsOption = ['--threads', availableThreadCount.toString()]
 def setParallel = "true"
