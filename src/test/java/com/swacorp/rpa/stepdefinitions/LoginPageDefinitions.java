@@ -39,6 +39,8 @@ public class LoginPageDefinitions {
     @Given("User is on HRMLogin page {string}")
     public void loginTest(String url) throws InterruptedException {
         driver.get(url);
+        System.out.println("entered browser value is "+System.getProperty("browserName"));
+        System.out.println("entered browserName value is "+System.getProperty("Name"));
         driver.manage().timeouts().getPageLoadTimeout();
         Thread.sleep(6000);
     }

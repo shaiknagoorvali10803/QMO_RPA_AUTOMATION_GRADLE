@@ -58,13 +58,12 @@ public class LoginPageActions {
     }
 
     public void login(String strUserName, String strPassword) {
-
+        System.out.println("entered browser value is "+System.getProperty("browserName"));
+        System.out.println("entered browserName value is "+System.getProperty("Name"));
         // Fill user name
         this.setUserName(strUserName);
-
         // Fill password
         this.setPassword(strPassword);
-
         // Click Login button
         this.clickLogin();
 
